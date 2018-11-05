@@ -1,9 +1,10 @@
 import React from 'react';
-import {Route, Switch, PropsRoute} from 'react-router-dom'
-import { Grid, Row, Col} from 'react-bootstrap';
+import {Route, Switch, PropsRoute, Link} from 'react-router-dom'
+import { Grid, Row, Col, Button} from 'react-bootstrap';
 import ProductChart from './ProductChart.jsx';
 import $ from 'jquery'
 import Header from './Header.jsx'
+
 // var data = require('../mockData.js');
 
 
@@ -89,7 +90,10 @@ class WatchListItem extends React.Component {
     // );
 
   return (
-    <ul> {listItems} </ul>
+    <div>
+    <Link to='/'><Button bsStyle="success">Search for more</Button></Link>
+      <ul> {listItems} </ul>
+    </div>
     )
   }
 
