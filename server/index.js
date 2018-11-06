@@ -8,7 +8,7 @@ var cookieSession = require('cookie-session');
 var priceTrackerCron = require('../database-mysql/runCron.js');
 
 try {
-  var config = require('../config.js');
+  var config = require('config.js');
 }
 
 catch(e) {
