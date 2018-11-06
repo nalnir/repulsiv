@@ -9,6 +9,7 @@ var priceTrackerCron = require('../database-mysql/runCron.js');
 
 try {
   var config = require('./config.js');
+  console.log('THIS IS THE USER YEAH!!!', config)
 }
 
 catch(e) {
