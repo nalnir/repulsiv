@@ -5,7 +5,7 @@ module.exports = {
         // First application
         {
             name: 'ye',
-            script: 'sudo node server/index.js',
+            script: 'sudo node index.js',
             env: {
                 COMMON_VARIABLE:
                     'true'
